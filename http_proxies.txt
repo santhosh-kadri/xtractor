@@ -1,0 +1,10 @@
+209.127.191.180:80:xrrancom-dest:io5rd3ncphvv
+45.72.30.159:80:xrrancom-dest:io5rd3ncphvv
+84.21.191.63:80:xrrancom-dest:io5rd3ncphvv
+45.130.125.157:80:xrrancom-dest:io5rd3ncphvv
+45.134.184.43:80:xrrancom-dest:io5rd3ncphvv
+45.136.172.123:80:xrrancom-dest:io5rd3ncphvv
+193.8.215.243:80:xrrancom-dest:io5rd3ncphvv
+45.136.231.226:80:xrrancom-dest:io5rd3ncphvv
+45.130.255.198:80:xrrancom-dest:io5rd3ncphvv
+45.95.99.226:80:xrrancom-dest:io5rd3ncphvv
