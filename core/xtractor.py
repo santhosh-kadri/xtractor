@@ -6,6 +6,7 @@ from core.http_service import HttpRequest
 from core.parser_service import HtmlParser
 from core.db_service import AlchemyService
 from core.logger import Logger
+from core.xception import XtendedException
 from requests.exceptions import ProxyError
 
 
@@ -19,7 +20,7 @@ class BaseExtractor:
     log = None
 
     def execute(self):
-        raise XtendedExcpetion('Method execute not implemented')
+        raise XtendedException('Method execute not implemented')
 
     def parse_html(self, html, parser='html.parser'):
         return HtmlParser(html, parser)
