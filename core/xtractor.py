@@ -4,7 +4,6 @@ from dataclasses import dataclass
 from argparse import ArgumentParser
 from core.http_service import HttpRequest
 from core.parser_service import HtmlParser
-from core.xception import XtendedExcpetion
 from core.db_service import AlchemyService
 from core.logger import Logger
 from requests.exceptions import ProxyError
