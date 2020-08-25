@@ -36,6 +36,7 @@ class HttpRequest:
         self.request = requests.Session()
 
     def get(self, url: Union[Text, bytes], **kwargs) -> Response:
+        self.url_cache.add(url)
         proxy_index = random.randint(0, len(self.__http_proxy_list) - 1)
         proxies = self.__http_proxy_list[proxy_index]
         return self.request.get(url, proxies=proxies)
