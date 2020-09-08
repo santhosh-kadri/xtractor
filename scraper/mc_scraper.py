@@ -1,4 +1,5 @@
 from core.xtractor import BaseExtractor
+from dao.models import StockNews
 
 
 class MoneyControl(BaseExtractor):
@@ -10,12 +11,15 @@ class MoneyControl(BaseExtractor):
         self.href_set = set()
 
     def execute(self):
+        stock_news = StockNews(href="jjjj", header="SBI shares crash", sub_header=" Shares of sbi fell today", source="mc_control")
+        self.db.save(stock_news)
         print("##### EXECUTE ######", self.cmd_args.pname)
         # mc_html = self.request.get(MoneyControl.MAIN_URL).text
         # mc_soup = self.parse_html(mc_html, 'lxml')
         # self.parse_left_box(mc_soup)
         # self.parse_mc_news(MoneyControl.MARKET_NEWS_URL)
         # self.parse_mc_news(MoneyControl.STOCK_NEWS_URL)
+
         self.parse_article()
 
     def parse_article(self):
